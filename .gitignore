@@ -1,0 +1,147 @@
+# -----------------------
+# 🐍 Python
+# -----------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+ENV.bak/
+
+# -----------------------
+# 🧱 Virtual Environments
+# -----------------------
+# Si usas venv, virtualenv, o pipenv
+venv/
+env/
+.venv/
+.env
+
+# -----------------------
+# 📦 Paquetes y distribuciones
+# -----------------------
+# Instalación
+*.egg
+*.egg-info/
+dist/
+build/
+*.dist-info/
+
+# Publicación
+*.whl
+wheelhouse/
+*.tgz
+*.zip
+
+# -----------------------
+# 🛠️ Herramientas de desarrollo
+# -----------------------
+# pip-tools
+requirements.txt
+constraints.txt
+
+# mypy
+.mypy_cache/
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# unittest
+.coverage
+.coverage.*
+.cache
+
+# pylint
+.pylintrc
+.pylintrc.*
+
+# flake8
+.flake8
+
+# black
+.blackcache
+
+# -----------------------
+# 🗂️ IDEs y editores
+# -----------------------
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# -----------------------
+# 📁 Sistema operativo
+# -----------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*.directory
+~$
+
+# -----------------------
+# 📊 Logs y databases
+# -----------------------
+*.log
+logs/
+*.sqlite
+*.sqlite3
+
+# -----------------------
+# 🧩 Variables de entorno
+# -----------------------
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# -----------------------
+# 📂 Carpetas temporales
+# -----------------------
+temp/
+tmp/
