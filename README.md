@@ -1,7 +1,7 @@
 
 # 🦅 Aetos – Wrapper de `pip` con índice de paquetes personalizado
 
-> **Aetos** (del griego "águila") es un wrapper ligero y poderoso de `pip` que ejecuta todos los comandos con un **servidor de paquetes (index) predefinido**, ideal para entornos con acceso restringido a PyPI, redes corporativas, CI/CD o usuarios que necesitan usar mirrors locales.
+> **Aetos** (del griego "águila") es un wrapper ligero y poderoso de `pip` que ejecuta todos los comandos con un **servidor de paquetes (index) predefinido** sin consumo de datos, ideal para entornos con acceso restringido a PyPI, redes corporativas, CI/CD o usuarios que necesitan usar mirrors locales.
 
 🚀 Usa `aetos` como si fuera `pip`, pero **sin tener que recordar `--index-url`** cada vez.
 
@@ -44,12 +44,11 @@ pip install requests --index-url https://pypi.tuna.tsinghua.edu.cn/simple/
 pip install aetos
 ```
 
-> 📌 Disponible en: [https://pypi.org/project/aetos](https://pypi.org/project/aetos)
 
 ### Opción 2: Desde el repositorio (desarrollo)
 
 ```bash
-git clone https://github.com/tu-usuario/aetos.git
+git clone https://github.com/JohnyYen/aetos
 cd aetos
 pip install -e .
 ```
@@ -77,10 +76,10 @@ Todos los comandos se ejecutarán automáticamente con el índice configurado.
 Actualmente, `aetos` está configurado para usar:
 
 ```
-https://pypi.tuna.tsinghua.edu.cn/simple/
+http://nexus.uclv.edu.cu/repository/npm/
 ```
 
-> Este es un mirror rápido y confiable de PyPI mantenido por la Universidad de Tsinghua (China).
+> Este es un mirror rápido y confiable de PyPI mantenido por la Universidad de las Villas (Cuba).
 
 ---
 
@@ -89,17 +88,9 @@ https://pypi.tuna.tsinghua.edu.cn/simple/
 Edita el archivo `aetos.py` y modifica la línea:
 
 ```python
-INDEX_URL = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+INDEX_URL = "http://nexus.uclv.edu.cu/repository/npm/"
 ```
 
-Puedes usar cualquiera de estos ejemplos:
-
-```python
-INDEX_URL = "https://pypi.org/simple/"                          # Oficial
-INDEX_URL = "https://pypi.mirrors.ustc.edu.cn/simple/"         # USTC (China)
-INDEX_URL = "https://pypi.douban.com/simple/"                  # Douban (China)
-INDEX_URL = "https://nexus.miempresa.com/repository/pypi/simple/"  # Tu registry privado
-```
 
 Luego reinstala el paquete:
 
@@ -129,7 +120,7 @@ Todos los comandos de `pip` son compatibles:
 Clona el repositorio y configura el entorno:
 
 ```bash
-git clone https://github.com/tu-usuario/aetos.git
+git clone https://github.com/JohnyYen/aetos
 cd aetos
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
@@ -153,15 +144,3 @@ aetos install rich
 python -m build
 twine upload dist/*
 ```
-
-Asegúrate de tener acceso al paquete `aetos` en PyPI.
-
----
-
-## 📎 Licencia
-
-MIT © [Tu Nombre]
-
----
-
-> 🦅 **Aetos**: el águila que vuela alto, llevando tus paquetes al lugar correcto, sin demoras.
