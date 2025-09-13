@@ -36,22 +36,47 @@ pip install requests --index-url https://pypi.tuna.tsinghua.edu.cn/simple/
 
 ---
 
-## 🚀 Instalación
 
-### Opción 1: Desde PyPI (recomendado)
+## 🚀 Instalación y configuración en tu PC
+
+### Opción 1: Instalar desde PyPI (recomendado)
 
 ```bash
 pip install aetos
 ```
 
-
-### Opción 2: Desde el repositorio (desarrollo)
+### Opción 2: Instalar desde el repositorio (modo desarrollo)
 
 ```bash
 git clone https://github.com/JohnyYen/aetos
 cd aetos
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# o
+venv\Scripts\activate   # Windows
 pip install -e .
 ```
+
+### Opción 3: Instalar en modo usuario (sin permisos de admin)
+
+```bash
+pip install --user aetos
+```
+
+---
+
+## 🏁 Primeros pasos
+
+1. Instala `aetos` usando una de las opciones anteriores.
+2. Abre una terminal y ejecuta comandos como si fuera `pip`:
+
+```bash
+aetos install requests
+aetos list
+```
+3. ¡Listo! Todos los comandos usarán el índice preconfigurado.
+
+---
 
 ---
 
@@ -115,9 +140,10 @@ Todos los comandos de `pip` son compatibles:
 
 ---
 
-## 🛠️ Desarrollo
 
-Clona el repositorio y configura el entorno:
+## 🛠️ Desarrollo local
+
+Si quieres contribuir o probar cambios en tu PC:
 
 ```bash
 git clone https://github.com/JohnyYen/aetos
@@ -125,12 +151,11 @@ cd aetos
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 # o
-venv\Scripts\activate     # Windows
-
+venv\Scripts\activate   # Windows
 pip install -e .
 ```
 
-Ahora puedes probar:
+Luego prueba el wrapper:
 
 ```bash
 aetos install rich
