@@ -6,7 +6,7 @@ import subprocess
 import os
 
 # 🔧 SERVIDOR DE PAQUETES PERSONALIZADO (definido en código)
-INDEX_URL = "https://pypi.tuna.tsinghua.edu.cn/simple/"  # Mirror de Tsinghua (China)
+INDEX_URL = "https://nexus.uclv.edu.cu/repository/pypi.org/"  # Mirror de Tsinghua (China)
 # INDEX_URL = "https://pypi.org/simple/"                  # PyPI oficial
 # INDEX_URL = "https://pypi.miprivate.com/simple/"       # Tu registry privado
 

@@ -1,7 +1,7 @@
 
 # 🦅 Aetos – Wrapper de `pip` con índice de paquetes personalizado
 
-> **Aetos** (del griego "águila") es un wrapper ligero y poderoso de `pip` que ejecuta todos los comandos con un **servidor de paquetes (index) predefinido** sin consumo de datos, ideal para entornos con acceso restringido a PyPI, redes corporativas, CI/CD o usuarios que necesitan usar mirrors locales.
+> **Aetos** es un wrapper ligero y poderoso de `pip` que ejecuta todos los comandos con un **servidor de paquetes (index) predefinido** sin consumo de datos, ideal para entornos con acceso restringido a PyPI, redes corporativas, CI/CD o usuarios que necesitan usar mirrors locales.
 
 🚀 Usa `aetos` como si fuera `pip`, pero **sin tener que recordar `--index-url`** cada vez.
 
@@ -52,7 +52,7 @@ git clone https://github.com/JohnyYen/aetos
 cd aetos
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
-# o
+# or
 venv\Scripts\activate   # Windows
 pip install -e .
 ```
@@ -150,7 +150,7 @@ git clone https://github.com/JohnyYen/aetos
 cd aetos
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
-# o
+# or
 venv\Scripts\activate   # Windows
 pip install -e .
 ```
